@@ -34,7 +34,8 @@ On terminal: `python -m venv .venv`
 Then `.\.venv\Scripts\Activate.ps1` to activate it. 
 After that install Dependencies: `python -m pip install -r requirements.txt`
 ## Running the API
-Make sure you are in the project directory COMPUTATIONAL_THINKING that contain main.py : `python -m uvicorn main:app --reload` to start the local server . Once ready , the host will be at [http://127.0.0.1:8000]
+Make sure you are in the project directory COMPUTATIONAL_THINKING that contain main.py : 
+`python -m uvicorn main:app --reload` to start the local server . Once ready , the host will be at [http://127.0.0.1:8000] and use [http://127.0.0.1:8000/docs] to use the endpoints.
 ## API :
 ### GET /
  Return the welcome message and usage introduction 
@@ -76,7 +77,7 @@ Empty or whitespace-only text is rejected.
 To run the tests, first start the API server in one terminal. Then open another terminal, activate the virtual environment, navigate to the project directory, and run : `python -m pytest -v test_api.py`
 The expected result is five passing tests when all endpoints behave as intended.
 ## Demonstration Video
-Demo Video Link: [###############################]
+Demo Video Link: [https://drive.google.com/drive/folders/1S7CWvtrHNezd6AOgHmT2yMPer3c7-rA0?usp=sharing]
 The demonstration video shows the API starting, the available endpoints, positive and negative sentiment predictions, and the handling of invalid input.
 ## Conclusion
 This project demonstrates how to integrate a pretrained Hugging Face sentiment analysis model with FastAPI to create a web API. It also demonstrates basic input validation, error handling, and automated API testing.
