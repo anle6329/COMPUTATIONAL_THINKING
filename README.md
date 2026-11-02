@@ -57,6 +57,7 @@ Receive text and predict its sentiment
 **POSSIBLE SENTIMENTS LABEL :**
  + POSITIVE
  + NEGATIVE
+
 **Input validation :**
  + The API rejects empty text and text containing only whitespace. It returns HTTP status code 400 with an error   message.
 
@@ -68,13 +69,15 @@ Receive text and predict its sentiment
 ```
 ## Testing
 Automated tests are implemented using Pytest and Requests.
+
 The test suite checks:
-The home endpoint returns the expected response.
-The health endpoint reports a healthy status.
-Positive text is classified as positive.
-Negative text is classified as negative.
-Empty or whitespace-only text is rejected.
++ The home endpoint returns the expected response.
++ The health endpoint reports a healthy status.
++ Positive text is classified as positive.
++ Negative text is classified as negative.
++ Empty or whitespace-only text is rejected.
 To run the tests, first start the API server in one terminal. Then open another terminal, activate the virtual environment, navigate to the project directory, and run : `python -m pytest -v test_api.py`
+
 The expected result is five passing tests when all endpoints behave as intended.
 ## Demonstration Video
 Demo Video Link: [https://drive.google.com/drive/folders/1S7CWvtrHNezd6AOgHmT2yMPer3c7-rA0?usp=sharing]
